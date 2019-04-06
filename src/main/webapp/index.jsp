@@ -24,6 +24,15 @@
 <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
 
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation
@@ -205,7 +214,7 @@
         <button type="submit" class="btn btn-default btn-lg">Send Message</button>
       </form>
       <div class="social">
-        <ul>
+      <ul>
           <li><a href="http://fb.me/FoodHacks21" target="blank"><i class="fa fa-facebook"></i></a></li>
           <li><a href="https://twitter.com/FoodHacks6" target="blank"><i class="fa fa-twitter"></i></a></li>
           <li><a href="https://instagram.com/foodhacks21?utm_source=ig_profile_share&igshid=1casd7ql5mdys" target="blank"><i class="fa fa-instagram"></i></a></li>
@@ -222,13 +231,6 @@
     </div>
   </div>
 </div>
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/SmoothScroll.js"></script> 
-<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
-<script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script> 
-<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>
