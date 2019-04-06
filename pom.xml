@@ -5,7 +5,7 @@
   <groupId>FoodHacks-team21</groupId>
   <artifactId>FoodHacks</artifactId>
   <version>1.0-SNAPSHOT</version>
- 
+ <packaging>war</packaging>
   <properties>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
@@ -33,22 +33,18 @@
             </executions>
         </plugin>
         <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-war-plugin</artifactId>
-            <version>2.2</version>
-            <configuration>
-                <webResources>
-                    <resource>
-                        <filtering>true</filtering>
-                        <targetPath>WEB-INF/context</targetPath>
-                        <directory>src/main/resources/WEB-INF/context</directory>
-                        <includes>
-                            <include>applicationContext.xml</include>
-                        </includes>
-                    </resource>
-                </webResources>
-            </configuration>
-        </plugin>
+    <artifactId>maven-war-plugin</artifactId>
+    <configuration>
+        <attachClasses>true</attachClasses>
+        <webXml>target/web.xml</webXml>
+        <webResources>
+            <resource>
+                <directory>src/main/webapp</directory>
+                <filtering>true</filtering>
+            </resource>
+        </webResources>
+    </configuration>
+</plugin>
     </plugins>
  </build>
   <dependencies>
