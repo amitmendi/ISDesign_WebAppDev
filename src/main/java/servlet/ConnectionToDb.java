@@ -5,14 +5,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class ConnectionToDb {
-
+//mysql://b5796d9aae2786:9832ca5e@us-cdbr-iron-east-03.cleardb.net/heroku_894d709599a7d70?reconnect=true
 	   // JDBC driver name and database URL
 	   static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	   static final String DB_URL = "jdbc:mysql://localhost/";
+	   static final String DB_URL = "jdbc:mysql://us-cdbr-iron-east-03.cleardb.net/heroku_894d709599a7d70/";
 
 	   //  Database credentials
-	   static final String USER = "root";
-	   static final String PASS = "Telstra123!";
+	   static final String USER = "b5796d9aae2786";
+	   static final String PASS = "9832ca5e";
 	   
 	   public HashMap<String,String> test(String email) {
 		   
@@ -30,7 +30,7 @@ public class ConnectionToDb {
 
 	      //STEP 4: Execute a query
 	      System.out.println("Creating database...");
-	      stmt= conn.prepareStatement("select password,firstname from FinalProject_Team21.User_Profile where emailid=?");
+	      stmt= conn.prepareStatement("select password,firstname from User_Profile where emailid=?");
 	      stmt.setString(1,email);  
 	      ResultSet res=stmt.executeQuery();
 	      while(res.next()){
@@ -82,7 +82,7 @@ public class ConnectionToDb {
 
 		      //STEP 4: Execute a query
 		      System.out.println("Creating database...");
-		      stmt= conn.prepareStatement("SELECT Recipe_name,Recipe_desc,Recipe_url FROM FinalProject_Team21.Recipe limit 3");
+		      stmt= conn.prepareStatement("SELECT Recipe_name,Recipe_desc,Recipe_url FROM Recipe limit 3");
 		      ResultSet res=stmt.executeQuery();
 		      while(res.next()){
 		          //Retrieve by column name
