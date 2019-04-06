@@ -8,7 +8,7 @@ public class ConnectionToDb {
 //mysql://b5796d9aae2786:9832ca5e@us-cdbr-iron-east-03.cleardb.net/heroku_894d709599a7d70?reconnect=true
 	   // JDBC driver name and database URL
 	   static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	   static final String DB_URL = "jdbc:mysql://us-cdbr-iron-east-03.cleardb.net/heroku_894d709599a7d70/";
+	   static final String DB_URL = "jdbc:mysql://us-cdbr-iron-east-03.cleardb.net/heroku_894d709599a7d70?autoReconnect=true&useSSL=false";
 
 	   //  Database credentials
 	   static final String USER = "b5796d9aae2786";
