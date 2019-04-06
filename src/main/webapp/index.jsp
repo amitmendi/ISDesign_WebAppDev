@@ -205,12 +205,12 @@
         <button type="submit" class="btn btn-default btn-lg">Send Message</button>
       </form>
       <div class="social">
-         <ul>
+        <ul>
           <li><a href="http://fb.me/FoodHacks21" target="blank"><i class="fa fa-facebook"></i></a></li>
           <li><a href="https://twitter.com/FoodHacks6" target="blank"><i class="fa fa-twitter"></i></a></li>
           <li><a href="https://instagram.com/foodhacks21?utm_source=ig_profile_share&igshid=1casd7ql5mdys" target="blank"><i class="fa fa-instagram"></i></a></li>
         
-        </ul>
+       </ul>
       </div>
     </div>
   </div>
