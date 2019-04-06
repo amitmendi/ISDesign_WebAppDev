@@ -41,7 +41,7 @@
         <li><a href="#about" class="page-scroll">AboutUs</a></li>
         <li><a href="#quickrecipes" class="page-scroll">Quick Recipes</a></li>
         <li><a href="#contact" class="page-scroll">Contact</a></li>
-        <li><a href="login.html" class="page-scroll">Login/SignUp</a></li>
+        <li><a href="loginsignup.jsp" class="page-scroll">Login/SignUp</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
