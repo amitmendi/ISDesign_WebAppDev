@@ -43,13 +43,13 @@ li {
 	display: list-item;
 }
 ol, ul {
-	margin-left: 1.7rem;
+	margin-left: 0rem;
 }
 ul li {
 	padding-left: .4rem;
 }
 ul ul, ul ol, ol ol, ol ul {
-	margin: .6rem 0 .6rem 1.7rem;
+	margin: .6rem 0 .6rem 0.6rem;
 }
 ul.disc li {
 	display: list-item;
@@ -67,7 +67,7 @@ ul.disc li::before {
 	position: absolute;
 	left: -17px;
 	top: 11px;
-	vertical-align: middle;
+	vertical-align: left;
 }
 /* --   */
 /*.clearfix:after {
@@ -365,7 +365,6 @@ p.lead {
 		
 		display: none;
 	}
-	
 }
 
 
@@ -458,13 +457,13 @@ p.lead {
 
 
 a, a:visited {
-	color: black;	
+	color: #0083B2;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-
+	text-transform: uppercase;
 	font-weight: bold;
 }
 a:hover, a:focus {
@@ -472,13 +471,38 @@ a:hover, a:focus {
 }
 
 
+@media only screen and (max-width:400px) {
+	#quickrecipes {
+		background: #090909;
+	}
+	.row section-intro{
+		display: none;
+	}
+}
 
 
-
-
-
-
-
+@media only screen and (max-width:768px) {
+	.quickrecipes-content {
+		max-width: 600px;
+	}
+#quickrecipes {
+	background: #090909 ;url(../img/taco.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	padding-top: 12rem;
+	padding-bottom: 12rem;
+	color: white;
+	background-position: right;
+	background-size: 400px 400px;
+	}
+#quickrecipes .section-intro {
+	display: none;
+	}
+	p{
+		width:100%;
+	}
+}
 
 
 /* Contact Section */

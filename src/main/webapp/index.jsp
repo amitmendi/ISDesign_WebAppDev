@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,15 +22,6 @@
 <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
 
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/SmoothScroll.js"></script> 
-<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
-<script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script> 
-<script type="text/javascript" src="js/main.js"></script>
-
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation
@@ -52,7 +41,7 @@
         <li><a href="#about" class="page-scroll">AboutUs</a></li>
         <li><a href="#quickrecipes" class="page-scroll">Quick Recipes</a></li>
         <li><a href="#contact" class="page-scroll">Contact</a></li>
-        <li><a href="loginsignup.jsp" class="page-scroll">Login/SignUp</a></li>
+        <li><a href="login.html" class="page-scroll">Login/SignUp</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -67,10 +56,7 @@
         <div class="intro-text">
           <h1>FOODHACKS</h1>
           <p> Are You Hungryy?  ChefCoco is here to make your cooking experience fun!   </p>
-          <a href="#about" class="btn btn-custom btn-lg page-scroll">Learn More</a> 
-          
-         
-       </div>
+          <a href="#about" class="btn btn-custom btn-lg page-scroll">Learn More</a> </div>
       </div>
     </div>
   </div>
@@ -142,38 +128,38 @@
 <div id="quickrecipes">
  
  <div class="row section-intro">
-      <div class="col-twelve " align="left">
+      <div class="col-xs-12" align="left">
         
         <h2 style="color: white; font-weight:bold;" >Are you Hungry?</h2>
             <h3 style="color: white">Here are our top picks for today...<h3>
   
       </div>      
     </div>
+    <div class="quickrecipes-content">
     <div class="item" data-item="1">
 
-          <h2 style="color:white; margin-left:2em;" align="left">Quick Breakfast Recipes</h2>
+          <h2 style="color:white;" align="left">Quick Breakfast Recipes</h2>
       
           <ul>
             <li>
-              <h2 style="color:white">Thai Peanut Noodles </a></h2>  <!-- reference https://www.favfamilyrecipes.com/two-minute-thai-peanut-noodles/ -->  
-              <p>These noodles are super tasty and takes about 2-5min to prepare. Simply turn your ramen noodles into authentic Thai Noodles with a few easy steps. </br> 
-              <span ><a style="color:white" href="https://www.favfamilyrecipes.com/two-minute-thai-peanut-noodles/" >View Recipe</a> </span></p> 
+              <h3 style="color:white">Thai Peanut Noodles </a></h3>  <!-- reference https://www.favfamilyrecipes.com/two-minute-thai-peanut-noodles/ -->  
+              <p>These noodles are super tasty and takes about 2-5min to prepare. Simply turn your ramen noodles into authentic Thai Noodles with a few easy steps. </br> <span style="color:red"><a href="https://www.favfamilyrecipes.com/two-minute-thai-peanut-noodles/">View Recipe</a> </span></p> 
             </li>
             <li>
-              <h2 style="color:white">Black Bean Soup</a></h2>
+              <h3 style="color:white">Black Bean Soup</a></h3>
               <p>A perfect soup for a chilly night. With some garlic, onion and bell peppers you can prepare this healthy and filling soup within 10 minutes.</br>
-              <a style="color:white" href="https://www.youtube.com/watch?v=iKqSZcCl3g0">View Recipe</a></p>
+              <a href="https://www.youtube.com/watch?v=iKqSZcCl3g0">View Recipe</a></p>
             </li>
             <li>
-              <h2 style="color:white">Chicken Tacos</a></h2>
+              <h3 style="color:white">Chicken Tacos</a></h3>
               <p>A very easy stir fry recipe for making mouth watering chicken tacos. You just need chicken, onions and some seasoning for this yummy dish.</br>
-              <a style="color:white" href="https://www.youtube.com/watch?v=egt4UMjDGRM">View Recipe</a></p>
+              <a href="https://www.youtube.com/watch?v=egt4UMjDGRM">View Recipe</a></p>
                </li>
           </ul>
 
 
       </div>
-
+    </div>
 </div>
 
 
@@ -214,12 +200,12 @@
         <button type="submit" class="btn btn-default btn-lg">Send Message</button>
       </form>
       <div class="social">
-      <ul>
+        <ul>
           <li><a href="http://fb.me/FoodHacks21" target="blank"><i class="fa fa-facebook"></i></a></li>
           <li><a href="https://twitter.com/FoodHacks6" target="blank"><i class="fa fa-twitter"></i></a></li>
           <li><a href="https://instagram.com/foodhacks21?utm_source=ig_profile_share&igshid=1casd7ql5mdys" target="blank"><i class="fa fa-instagram"></i></a></li>
         
-       </ul>
+        </ul>
       </div>
     </div>
   </div>
@@ -231,6 +217,13 @@
     </div>
   </div>
 </div>
-
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
