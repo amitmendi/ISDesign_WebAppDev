@@ -177,7 +177,7 @@
   </div>
 </div> 
 
-<!--    JS for toggle in RWD(menu) --->
+<!--    JS for toggle in RWD(menu) -->
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <!-- <script type="text/javascript" src="js/SmoothScroll.js"></script> 
