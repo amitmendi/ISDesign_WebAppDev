@@ -84,7 +84,7 @@ public class ConnectionToDb {
 
 		      //STEP 4: Execute a query
 		      System.out.println("Creating database...");
-		      stmt= conn.prepareStatement("SELECT Recipe_id,Recipe_name,Recipe_desc,Recipe_url FROM heroku_894d709599a7d70.Recipe order by RAND() limit 3");
+		      stmt= conn.prepareStatement("SELECT distinct Recipe_id,Recipe_name,Recipe_desc,Recipe_url FROM heroku_894d709599a7d70.Recipe order by RAND() limit 3");
 		      ResultSet res=stmt.executeQuery();
 		      while(res.next()){
 		          //Retrieve by column name
