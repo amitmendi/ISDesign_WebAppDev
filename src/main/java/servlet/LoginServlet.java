@@ -29,12 +29,11 @@ public class LoginServlet extends HttpServlet {
 		
 		ConnectionToDb dobj = new ConnectionToDb();
 		
-		HashMap<String,String> map = dobj.test(email);
+		HashMap<String,String> map = dobj.user_info(email);
 		try{
 			System.out.print("Form password"+pwd);
 			System.out.print("Data pass"+map.get("password"));
 		if((!map.isEmpty()) && map.get("password").equals(pwd)){
-			System.out.print("I am here 1");
 			Cookie loginCookie = new Cookie("firstname",map.get("firstname"));
 			//setting cookie to expiry in 30 mins
 			loginCookie.setMaxAge(30*60);

@@ -4,6 +4,8 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+//This class is used to fetch 3 random recipe info and user info like username and password
+
 public class ConnectionToDb {
 //mysql://b5796d9aae2786:9832ca5e@us-cdbr-iron-east-03.cleardb.net/heroku_894d709599a7d70?reconnect=true
 	   // JDBC driver name and database URL
@@ -14,7 +16,7 @@ public class ConnectionToDb {
 	   static final String USER = "b5796d9aae2786";
 	   static final String PASS = "9832ca5e";
 	   
-	   public HashMap<String,String> test(String email) {
+	   public HashMap<String,String> user_info(String email) {
 		   
 	   HashMap<String,String> map = new HashMap<String,String>();
 	   
