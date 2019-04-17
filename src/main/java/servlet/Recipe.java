@@ -1,7 +1,8 @@
 package servlet;
 
 public class Recipe {
-	private String recipeName;
+	 private Integer recipeId; 
+	 private String recipeName;
 	 private String recipeDesc;
 	 private String imgUrl;
 	 public String getRecipeName() {
@@ -21,5 +22,11 @@ public class Recipe {
 	}
 	public void setImgUrl(String imgUrl) {
 		this.imgUrl = imgUrl;
+	}
+	public Integer getRecipeId() {
+		return recipeId;
+	}
+	public void setRecipeId(Integer recipeId) {
+		this.recipeId = recipeId;
 	}
 }
