@@ -73,7 +73,7 @@
         <li><a href="index.jsp#page-top" class="page-scroll">Home</a></li>
         <li><a href="index.jsp#about" class="page-scroll">AboutUs</a></li>
         <li><a href="index.jsp#quickrecipes" class="page-scroll">Quick Recipes</a></li>
-        <li><a href="#index.jsp#contact" class="page-scroll">Contact</a></li>
+        <li><a href="index.jsp#contact" class="page-scroll">Contact</a></li>
         <li><a href="signup.jsp" class="page-scroll">SignUp</a></li>
       </ul>
     </div>
