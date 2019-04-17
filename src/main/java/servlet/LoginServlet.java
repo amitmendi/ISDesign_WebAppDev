@@ -41,11 +41,13 @@ public class LoginServlet extends HttpServlet {
 			response.addCookie(loginCookie);
 			response.sendRedirect("landingpage.jsp");
 		}else{
-			System.out.print("I am here 2");
-			RequestDispatcher rd = getServletContext().getRequestDispatcher("/loginsignup.jsp");
-			PrintWriter out= response.getWriter();
-			out.println("<font color=red>Either user name or password is wrong.</font>");
+			
+			// display error message on the screen in case of incorrect credentials and redirecting to the same login page
+			
+			request.setAttribute("error","Invalid Username or Password");
+			RequestDispatcher rd=request.getRequestDispatcher("/loginsignup.jsp");            
 			rd.include(request, response);
+			
 		}
 		}
 		catch(Exception e){

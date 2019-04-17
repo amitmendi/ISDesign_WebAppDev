@@ -112,6 +112,14 @@
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
                   </div>
+                  <!-- For displaying error message on invalid credentials -->
+
+                  <%
+                  String login_msg=(String)request.getAttribute("error");  
+                  if(login_msg!=null)
+                  out.println("<font color=red size=4px>"+login_msg+"</font>");
+                  %>
+                  
                   <div class="form-group text-center">
                     <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
                     <label for="remember" style="display: contents;"> Remember Me</label>
