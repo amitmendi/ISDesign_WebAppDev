@@ -22,7 +22,6 @@ public class LoginServlet extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 
 		// get request parameters for userID and password
-		System.out.print("I am here");
 		String email = request.getParameter("emailid");
 		String pwd = request.getParameter("password");
 	
@@ -31,8 +30,7 @@ public class LoginServlet extends HttpServlet {
 		
 		HashMap<String,String> map = dobj.user_info(email);
 		try{
-			System.out.print("Form password"+pwd);
-			System.out.print("Data pass"+map.get("password"));
+			
 		if((!map.isEmpty()) && map.get("password").equals(pwd)){
 			Cookie loginCookie = new Cookie("firstname",map.get("firstname"));
 			//setting cookie to expiry in 30 mins
@@ -44,7 +42,7 @@ public class LoginServlet extends HttpServlet {
 			// display error message on the screen in case of incorrect credentials and redirecting to the same login page
 			
 			request.setAttribute("error","Invalid Username or Password");
-			RequestDispatcher rd=request.getRequestDispatcher("/loginsignup.jsp");            
+			RequestDispatcher rd=request.getRequestDispatcher("/login.jsp");            
 			rd.include(request, response);
 			
 		}
