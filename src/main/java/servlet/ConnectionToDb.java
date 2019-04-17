@@ -83,7 +83,7 @@ public class ConnectionToDb {
 
 		      //STEP 4: Execute a query
 		      System.out.println("Creating database...");
-		      stmt= conn.prepareStatement("SELECT distinct Recipe_id,Recipe_name,Recipe_desc,Recipe_url FROM heroku_894d709599a7d70.Recipe order by RAND() limit 3");
+		      stmt= conn.prepareStatement("SELECT distinct Recipe_id,Recipe_name,Recipe_desc,Recipe_url,User_id,Recipe_steps,Recipe_ing FROM heroku_894d709599a7d70.Recipe order by RAND()");
 		      ResultSet res=stmt.executeQuery();
 		      while(res.next()){
 		          //Retrieve by column name
@@ -92,6 +92,9 @@ public class ConnectionToDb {
 		    	  rec.setRecipeDesc(res.getString(3));
 		    	  rec.setRecipeName(res.getString(2));
 		    	  rec.setImgUrl(res.getString(4));
+		    	  rec.setUserId(res.getInt(5)); //added so that specific recipe info can be fetched when full recipe is viewed
+		    	  rec.setRecipeSteps(res.getString(6)); //added so that specific recipe info can be fetched when full recipe is viewed
+		    	  rec.setRecipeIng(res.getString(7)); //added so that specific recipe info can be fetched when full recipe is viewed
 		    	  al.add(rec);
 		      }
 		

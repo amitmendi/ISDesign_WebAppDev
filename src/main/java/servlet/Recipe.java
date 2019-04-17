@@ -5,6 +5,27 @@ public class Recipe {
 	 private String recipeName;
 	 private String recipeDesc;
 	 private String imgUrl;
+	 private String recipeSteps;
+	 private String recipeIng;
+	 private Integer userId;
+	 public String getRecipeSteps() {
+		return recipeSteps;
+	}
+	public Integer getUserId() {
+		return userId;
+	}
+	public void setUserId(Integer userId) {
+		this.userId = userId;
+	}
+	public void setRecipeSteps(String recipeSteps) {
+		this.recipeSteps = recipeSteps;
+	}
+	public String getRecipeIng() {
+		return recipeIng;
+	}
+	public void setRecipeIng(String recipeIng) {
+		this.recipeIng = recipeIng;
+	}
 	 public String getRecipeName() {
 		return recipeName;
 	}
