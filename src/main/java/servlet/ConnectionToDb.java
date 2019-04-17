@@ -31,7 +31,6 @@ public class ConnectionToDb {
 	      conn = DriverManager.getConnection(DB_URL, USER, PASS);
 
 	      //STEP 4: Execute a query
-	      System.out.println("Creating database...");
 	      stmt= conn.prepareStatement("select password,firstname from heroku_894d709599a7d70.User_Profile where emailid=?");
 	      stmt.setString(1,email);  
 	      ResultSet res=stmt.executeQuery();

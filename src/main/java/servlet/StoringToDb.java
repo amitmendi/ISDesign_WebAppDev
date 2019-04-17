@@ -7,11 +7,11 @@ public class StoringToDb {
 
 	   // JDBC driver name and database URL
 	   static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	   static final String DB_URL = "jdbc:mysql://localhost/";
+	   static final String DB_URL = "jdbc:mysql://us-cdbr-iron-east-03.cleardb.net/";
 
 	   //  Database credentials
-	   static final String USER = "root";
-	   static final String PASS = "Telstra123!";
+	   static final String USER = "b5796d9aae2786";
+	   static final String PASS = "9832ca5e";
 	   
 	   public void store_user_info(ArrayList<String> list) {
 		   
@@ -30,7 +30,7 @@ public class StoringToDb {
 
 	      //STEP 4: Execute a query
 	      System.out.println("Storing to database...");
-	      String insertTableSQL = "INSERT INTO FinalProject_Team21.User_Profile"
+	      String insertTableSQL = "INSERT INTO heroku_894d709599a7d70.User_Profile"
 	    			+ "(firstname,lastname,emailid,password) VALUES"
 	    			+ "(?,?,?,?)";
 	      stmt= conn.prepareStatement(insertTableSQL);
