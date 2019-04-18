@@ -116,7 +116,9 @@ if(firstname == null) response.sendRedirect("login.jsp");
     <div class="row">
     <%ConnectionToDb connDb = new ConnectionToDb();
     ArrayList<Recipe> al= connDb.fetchRecipes();
-    	for(Recipe rec: al){%>
+    int limit = 0;
+    	for(Recipe rec: al){
+        if (limit < 3){%>
         <div class="col-sm-4">
           <div class="card" style="width: 18rem; margin:2em;">
           <img class="card-img-top" src="<%=rec.getImgUrl() %>" alt="Card image cap" style="width:286px; height:190px;"> <!-- put inline intentionally to overwrite bootstrap css -->
@@ -126,7 +128,9 @@ if(firstname == null) response.sendRedirect("login.jsp");
                 <a href="#" class="btn btn-primary">View Full Recipe</a>
             </div>
           </div>
-        </div><%} %>
+        </div><%
+        limit++;}
+      }  %>
     </div>
   </div>
 </div>
