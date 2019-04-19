@@ -7,16 +7,11 @@ public class Recipe {
 	 private String imgUrl;
 	 private String recipeSteps;
 	 private String recipeIng;
-	 private Integer userId;
+
 	 public String getRecipeSteps() {
 		return recipeSteps;
 	}
-	public Integer getUserId() {
-		return userId;
-	}
-	public void setUserId(Integer userId) {
-		this.userId = userId;
-	}
+	
 	public void setRecipeSteps(String recipeSteps) {
 		this.recipeSteps = recipeSteps;
 	}
