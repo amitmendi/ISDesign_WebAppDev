@@ -125,7 +125,28 @@ if(firstname == null) response.sendRedirect("login.jsp");
             <div class="card-body">
               <h5 class="card-title"><%=rec.getRecipeName()%></h5>
               <p class="card-text"><%=rec.getRecipeDesc()%></p>
-                <a href="#" class="btn btn-primary">View Full Recipe</a>
+
+              <!-- new code for accessing full recipe info -->
+              
+              <!-- Making remaining attributes hidden so that they can be displayed on a different jsp -->
+             
+              
+              
+              <form id="Recipe-form" action="RecipeReviewServlet" method="post" style="display: block;">
+               <div class="full-recipe">
+                        <input type="hidden" name="recipeName" value = "<%=rec.getRecipeName()%>" >
+                        <input type="hidden" name="recipeId" value = "<%=rec.getRecipeId()%>" >
+                        <input type="hidden" name="recipeDesc" value="<%=rec.getRecipeDesc()%>">
+                        <input type="hidden" name="recipeUrl" value="<%=rec.getImgUrl()%>">
+                        <input type="hidden" name="recipeSteps" value="<%=rec.getRecipeSteps()%>">
+                        <input type="hidden" name="recipeIng" value="<%=rec.getRecipeIng()%>">
+     
+                        <input type="submit" name="view_full_recipe" class="btn btn-primary" value="View Full Recipe">
+               </div>
+              </form> 
+         
+
+
             </div>
           </div>
         </div><%
