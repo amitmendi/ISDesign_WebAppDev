@@ -44,6 +44,10 @@ public class LoginServlet extends HttpServlet {
 			
 			response.addCookie(loginCookie);
 			response.addCookie(useridCookie);
+
+		    response.sendRedirect("landingpage.jsp");
+
+
 		}else{
 			
 			// display error message on the screen in case of incorrect credentials and redirecting to the same login page
