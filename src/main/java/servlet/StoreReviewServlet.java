@@ -1,9 +1,9 @@
 package servlet;
 
 import java.io.IOException;
-import java.time.LocalDate;
+//import java.time.LocalDate;
 import java.util.ArrayList;
-
+import java.util.Date;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -62,7 +62,7 @@ public class StoreReviewServlet extends HttpServlet {
 		
 		//Getting date of review  
 		
-		LocalDate reviewdate = LocalDate.now();
+		Date reviewdate = new Date();
 		
 		
 		//Getting user id of the user logged in from cookie
@@ -112,7 +112,7 @@ public class StoreReviewServlet extends HttpServlet {
 			
 			//redirecting to respective page
 			request.setAttribute("success","The review has been posted successfully. Check below!!");
-			RequestDispatcher rd=request.getRequestDispatcher("recipeReview.jsp");            
+			RequestDispatcher rd=request.getRequestDispatcher("/recipeReview.jsp");            
 			rd.include(request, response);	
 		}
 		
