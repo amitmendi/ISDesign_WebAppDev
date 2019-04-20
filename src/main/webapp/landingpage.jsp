@@ -168,7 +168,7 @@ if(firstname == null) response.sendRedirect("login.jsp");
 <script type="text/javascript" src="js/nivo-lightbox.js"></script> 
 <script type="text/javascript" src="js/jquery.isotope.js"></script> 
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script> 
-<script type="text/javascript" src="js/main.js"></script> -->
+<script type="text/javascript" src="js/contact_me.js"></script> -->
+<script type="text/javascript" src="js/main.js"></script> 
 </body>
 </html>

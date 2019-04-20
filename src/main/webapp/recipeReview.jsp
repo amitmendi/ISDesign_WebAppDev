@@ -149,10 +149,39 @@
                 <!-- Form to store review in db -->
                 
                 <form id="Review-form" action="StoreReviewServlet" method="post" style="display: block;">
-                    <textarea name="reveiw" class="form-control" placeholder="write a comment..." rows="3"></textarea>
+
+                  <input type="hidden" name="recipeId" value = "<%=rec.getRecipeId()%>" >
+                    <!--  Code to see if above recipe and review list objects are null in case the page refreshes since data is coming from other servlet
+  
+                   First setting above values of recipe to hidden fields -->
+ 
+                    <input type="hidden" name="recipeName" value = "<%=rec.getRecipeName()%>" >
+                    <input type="hidden" name="recipeUrl" value = "<%=rec.getImgUrl()%>" >
+                    <input type="hidden" name="recipeDesc" value = "<%=rec.getRecipeDesc()%>" >
+                    <input type="hidden" name="recipeSteps" value = "<%=rec.getRecipeIng()%>" >
+                    <input type="hidden" name="recipeIng" value = "<%=rec.getRecipeSteps()%>" >
+                      
+                      <!--  For reviewlist call fetch recipe again this servlet using recipe id -->
+
+                    <textarea name="review" class="form-control" placeholder="write a comment..." rows="3"></textarea>
                     <br>
-                    <button type="button" id ="submit_review" class="btn btn-custom pull-right">Post Review</button>
+                    <button type="submit" id ="submit_review" class="btn btn-custom pull-right">Post Review</button>
                 </form>
+
+
+                  <!-- For displaying error message on no review -->
+                    <%
+                    String null_review=(String)request.getAttribute("null_error");
+                    if(null_review!=null)
+                    out.println("<font color=red size=4px>"+null_review+"</font>");
+                    %>
+                    <!-- For displaying success message on review post success -->
+                    <%
+                    String success=(String)request.getAttribute("success");  
+                    if(success!=null)
+                    out.println("<font color=green size=4px>"+success+"</font>");
+                    %>
+
                     <div class="clearfix" style="height: 4em;"></div>
                     <hr>
                     <ul class="media-list">
@@ -176,32 +205,7 @@
 
                             </div>
                         </li>
-                        <!-- <li class="media">
-                            <a href="#" class="pull-left">
-                                <img src="https://bootdey.com/img/Content/user_2.jpg" alt="" class="img-circle">
-                            </a>
-                            <div class="media-body">
-                                <span class="text-muted pull-right">
-
-                                </span>
-                                <strong class="text-success">@Mogly</strong>
-                                <p>Swaad Sa aa gaya!
-                                </p>
-                            </div>
-                        </li>
-                        <li class="media">
-                            <a href="#" class="pull-left">
-                                <img src="https://bootdey.com/img/Content/user_3.jpg" alt="" class="img-circle">
-                            </a>
-                            <div class="media-body">
-                                <span class="text-muted pull-right">
-                                </span>
-                                <strong class="text-success">@Mohanty</strong>
-                                <p>
-                                    Bohot saheee!
-                                </p>
-                            </div>
-                        </li> -->
+                        
                     </ul>
                 </div>
             </div>

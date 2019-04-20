@@ -31,13 +31,14 @@ public class ConnectionToDb {
 	      conn = DriverManager.getConnection(DB_URL, USER, PASS);
 
 	      //STEP 4: Execute a query
-	      stmt= conn.prepareStatement("select password,firstname from heroku_894d709599a7d70.User_Profile where emailid=?");
+	      stmt= conn.prepareStatement("select password,firstname, User_id from heroku_894d709599a7d70.User_Profile where emailid=?");
 	      stmt.setString(1,email);  
 	      ResultSet res=stmt.executeQuery();
 	      while(res.next()){
 	          //Retrieve by column name
 	          map.put("password",res.getString("password"));
 	          map.put("firstname", res.getString("firstname"));
+	          map.put("User_id", res.getString("User_id"));
 	      }
 	
 	   }

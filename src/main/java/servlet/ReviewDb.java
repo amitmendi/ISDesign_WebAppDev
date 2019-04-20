@@ -17,10 +17,8 @@ public class ReviewDb {
 	   
 	   //For storing review for a particular recipe
 	   
-	   public void store_review(ArrayList<String> list) {
-		   
-	   //HashMap<String,String> map = new HashMap<String,String>();
-		 
+	   public void store_review(ArrayList<Object> list) {
+		   		 
 	   
 	   Connection conn = null;
 	   PreparedStatement stmt = null;
@@ -39,7 +37,7 @@ public class ReviewDb {
 	    			+ "(?,?,?,?)";
 	      stmt= conn.prepareStatement(insertTableSQL);
 	      for(int i=1; i<=list.size(); i++){
-	    	  stmt.setString(i,list.get(i-1) );
+	    	  stmt.setObject(i,list.get(i-1) );
 	      }
 	      // execute insert SQL statement
 	   	  stmt.executeUpdate();

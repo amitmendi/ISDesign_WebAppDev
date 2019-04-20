@@ -32,11 +32,18 @@ public class LoginServlet extends HttpServlet {
 		try{
 			
 		if((!map.isEmpty()) && map.get("password").equals(pwd)){
+			
+			//creating cookie to store firstname and user_id
 			Cookie loginCookie = new Cookie("firstname",map.get("firstname"));
+			Cookie useridCookie = new Cookie("User_id",map.get("User_id"));
+
 			//setting cookie to expiry in 30 mins
 			loginCookie.setMaxAge(30*60);
+			useridCookie.setMaxAge(30*60);
+			
+			
 			response.addCookie(loginCookie);
-			response.sendRedirect("landingpage.jsp");
+			response.addCookie(useridCookie);
 		}else{
 			
 			// display error message on the screen in case of incorrect credentials and redirecting to the same login page
