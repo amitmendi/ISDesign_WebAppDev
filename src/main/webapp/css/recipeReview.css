@@ -269,6 +269,7 @@ ul#recipe_prep_details li{
    
     #show {
     	text-transform: lowercase;
+    	margin-top: 12%;
     }
     #submit_review{
     	text-transform: lowercase;
