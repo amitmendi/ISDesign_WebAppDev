@@ -82,19 +82,29 @@ if(firstname == null) response.sendRedirect("login.jsp");
 <div class="col-md-6 col-md-offset-3">     
 <div class="row">
 
-<form role="form" id="form-buscar" style="padding:1em; margin-top:-40%;">
+<!-- Form for searching recipes -->
+
+<form id="form-buscar" action="SearchRecipeServlet" method="post" style="padding:1em; margin-top:-40%;">
 <div class="form-group">
 <div class="input-group">
-<input id="1" class="form-control" type="text" name="search" placeholder="Start typing the name of your favourite dish..." required/>
+<input id="1" class="form-control" type="text" name="search" placeholder="Search your favorite dish" required/>
 <span class="input-group-btn">
 <button class="btn btn-success" type="submit" style="background-color: #54D0DD;">
 <!-- <i class="glyphicon glyphicon-search" aria-hidden="true"></i> --> Search
 </button>
 </span>
-</div>
+            
 </div>
 
+            
+</div>
 </form>
+               <!-- For displaying error message on no recipe found -->
+            <%
+            String search_error=(String)request.getAttribute("search_error");
+            if(search_error!=null)
+            out.println("<font color=red size=4px>"+search_error+"</font>");
+            %>
 </div>            
 </div>
   </header>  
