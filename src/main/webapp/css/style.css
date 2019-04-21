@@ -261,6 +261,7 @@ p.lead {
 	text-align: center;
 	width: 1000px;
 	height: 200px;
+	margin-left: 5%;
 }
 
 
@@ -484,6 +485,8 @@ a:hover, a:focus {
 @media only screen and (max-width:768px) {
 	.quickrecipes-content {
 		max-width: 600px;
+		margin-right: 10%;
+		text-align: justify;
 	}
 #quickrecipes {
 	background: #090909 ;url(../img/taco.jpg) no-repeat center;

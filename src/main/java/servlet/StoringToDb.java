@@ -3,6 +3,7 @@ package servlet;
 import java.sql.*;
 import java.util.ArrayList;
 
+//For storing signup information of user
 public class StoringToDb {
 
 	   // JDBC driver name and database URL

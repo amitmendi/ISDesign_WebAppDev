@@ -103,7 +103,7 @@
                 </div><!-- card actions -->
                 <div class="card-reveal">
                   <span class="card-title">Steps And Ingredients </span> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <p class="ingredient_list">List of ingredients goes here</p>
+                    <p class="ingredient_list">List of ingredients goes here: </p>
                     <p>
                        <ul>
                         <%for (String ing: ings){%>
@@ -111,7 +111,7 @@
                         <% }%>
                        </ul>
                     </p>
-                    <h3>    Follow the steps below: </h3>
+                    <p class="ingredient_list">Follow the steps below: </p>
                     <p>                        
                        <ul>
                         <%for (String step: steps){%>
