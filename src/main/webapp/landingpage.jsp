@@ -115,12 +115,6 @@ if(firstname == null) response.sendRedirect("login.jsp");
 
 
 <div id="suggestions">
-  <!-- <div class="container">
-    <div class="section-title text-center center">
-      <h2 style="color:#E87B07;">Here are Chef Coco's top suggestions for you..</h2>
-      <hr>
-    </div>
-  </div> -->
   <div class="container">
     <div class="section-title text-center center">
       <h2 style="color:#E87B07;">Here are Chef Coco's top suggestions for you..</h2>
@@ -131,7 +125,7 @@ if(firstname == null) response.sendRedirect("login.jsp");
     ArrayList<Recipe> al= connDb.fetchRecipes();
     int limit = 0;
     	for(Recipe rec: al){
-        if (limit < 3){%>
+        if (limit < 3){ %>
         <div class="col-sm-4">
           <div class="card" style="width: 18rem; margin:2em;">
           <img class="card-img-top" src="<%=rec.getImgUrl() %>" alt="Card image cap" style="width:286px; height:190px;"> <!-- put inline intentionally to overwrite bootstrap css -->
@@ -159,10 +153,11 @@ if(firstname == null) response.sendRedirect("login.jsp");
               </form> 
          
 
-
+            
             </div>
           </div>
-        </div><%
+        </div>
+        <%
         limit++;}
       }  %>
     </div>
