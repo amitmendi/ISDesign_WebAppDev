@@ -98,13 +98,16 @@ if(firstname == null) response.sendRedirect("login.jsp");
 
             
 </div>
-</form>
-               <!-- For displaying error message on no recipe found -->
+  
+            <!-- For displaying error message on no recipe found -->
             <%
             String search_error=(String)request.getAttribute("search_error");
             if(search_error!=null)
             out.println("<font color=red size=4px>"+search_error+"</font>");
             %>
+
+</form>
+          
 </div>            
 </div>
   </header>  
