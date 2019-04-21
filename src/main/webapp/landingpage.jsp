@@ -58,7 +58,7 @@ if(firstname == null) response.sendRedirect("login.jsp");
         
         <li><a href="https://foodhacks.herokuapp.com/UpdateProfileServlet" class="page-scroll">Profile</a></li> 
 
-        <li><a href="login.jsp" class="page-scroll">Logout</a></li>
+        <li><a href="logout.jsp" class="page-scroll">Logout</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 

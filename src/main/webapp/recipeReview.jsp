@@ -72,7 +72,7 @@
         <li><a href="#page-top" class="page-scroll">Recipe</a></li>
                 <li><a href="#review_section" class="page-scroll">Reviews</a></li>
         <li><a href="landingpage.jsp" class="page-scroll">Home</a></li>
-        <li><a href="login.jsp" class="page-scroll">Logout</a></li>
+        <li><a href="logout.jsp" class="page-scroll">Logout</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
