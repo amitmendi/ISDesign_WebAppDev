@@ -220,7 +220,7 @@
 <h2>You may also like:  </h2>
 <div class="row">
         <div class="col-sm-4">
-          <div class="card" style="">
+          <div class="card" style="width:312px;">
           <img class="card-img-top" src="./img/beef-tacos.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Beef Tacos</h5>
@@ -230,7 +230,7 @@
           </div>
         </div>
         <div class="col-sm-4">
-          <div class="card" style="">
+          <div class="card" style="width:312px;">
           <img class="card-img-top" src="./img/beef-enchillada.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Beef Enchilada</h5>
@@ -240,7 +240,7 @@
           </div>
         </div>
         <div class="col-sm-4">
-          <div class="card" style="">
+          <div class="card" style="width:312px;">
           <img class="card-img-top" src="./img/ChickenSoup.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Chicken Soup</h5>
