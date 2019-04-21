@@ -31,6 +31,7 @@
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <%
+//fetching name from cookie to display on top
 String firstname = null;
 Cookie[] cookies = request.getCookies();
 if(cookies !=null){
@@ -54,9 +55,9 @@ if(firstname == null) response.sendRedirect("login.jsp");
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#page-top" class="page-scroll">Home</a></li>
-<!--         <li><a href="#about" class="page-scroll">AboutUs</a></li>
-        <li><a href="#quickrecipes" class="page-scroll">Quick Recipes</a></li>
-        <li><a href="#contact" class="page-scroll">Contact</a></li> -->
+        
+        <li><a href="https://foodhacks.herokuapp.com/UpdateProfileServlet" class="page-scroll">Profile</a></li> 
+
         <li><a href="login.jsp" class="page-scroll">Logout</a></li>
       </ul>
     </div>

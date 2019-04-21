@@ -1,0 +1,39 @@
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.btn-login {
+    background-color: #54d0dd;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    height: auto;
+    width: 5em;
+    font-weight: normal;
+    padding: 14px 0;
+    border: 5;
+    text-transform: uppercase;
+    border: solid 2px black;
+}
+
+
+}
+.btn-login:hover,
+.btn-login:focus {
+    color: #fff;
+    background-color: #54d0dd;
+    border-color: #53A3CD;
+}
+#sucess .a:hover,
+{
+    color: #fff;
+    background-color: #54d0dd;
+    border-color: #53A3CD;
+}
+#success .a:focus 
+{
+    color: #fff;
+    background-color: #54d0dd;
+    border-color: #53A3CD;
+}
