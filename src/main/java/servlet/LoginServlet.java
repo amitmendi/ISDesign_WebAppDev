@@ -45,8 +45,17 @@ public class LoginServlet extends HttpServlet {
 			response.addCookie(loginCookie);
 			response.addCookie(useridCookie);
 
-		    response.sendRedirect("landingpage.jsp");
+			//code to redirect to admin page if admin logs in
+			
+			if (map.get("firstname").equals("Admin")){
+				RequestDispatcher rd=request.getRequestDispatcher("/admin.jsp");            
+				rd.include(request, response);
+			}
+			else{
 
+			RequestDispatcher rd=request.getRequestDispatcher("/landingpage.jsp");            
+			rd.include(request, response);
+			}
 
 		}else{
 			

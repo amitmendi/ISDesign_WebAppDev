@@ -6,6 +6,14 @@ public class User {
 	private String lastname;
 	private String emailid;
 	private String password;
+	private Integer userId;
+	
+	public Integer getUserId() {
+		return userId;
+	}
+	public void setUserId(Integer userId) {
+		this.userId = userId;
+	}
 	
 	public String getFirstname() {
 		return firstname;
