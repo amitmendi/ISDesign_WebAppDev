@@ -1,3 +1,4 @@
+/*Styling for full body of the page*/
 body, html {
 	font-family: 'Open Sans', sans-serif;
 	text-rendering: optimizeLegibility !important;
@@ -6,6 +7,7 @@ body, html {
 	width: 100% !important;
 	height: 100% !important;
 }
+/*Styling for headers*/
 h2 {
 	margin: 0 0 20px 0;
 	font-weight: 400;
@@ -22,14 +24,16 @@ h5 {
 	font-weight: 700;
 	line-height: 20px;
 }
+/*styling for text in intro section*/
 p.intro {
-	font-size: 16px;
+	font-size: 1em;
 	margin: 12px 0 0;
 	line-height: 24px;
 }
 a {
 	color: #f6f6f6;
 }
+
 a:hover, a:focus {
 	text-decoration: none;
 	color: #343b42;
@@ -172,6 +176,7 @@ hr {
 	background-color: #343b42;
 }
 /* Header Section */
+/*Styling for background on landing page*/
 .intro {
 	display: table;
 	width: 100%;
@@ -184,6 +189,13 @@ hr {
 	background-size: cover;
 	background: sticky;
 	-o-background-size: cover;
+	height: 827px;
+}
+/* Responsive styling for adjusting height if intro div in mobile view */
+@media screen only and (max-width: 400px){
+	#intro{
+		height: 100%;
+	}
 }
 .section-title.center {
 	padding: 10px 0 40px 0;
@@ -206,8 +218,7 @@ header .intro-text {
 	padding-top: 250px;
 	padding-bottom: 200px;
 }
-
-
+/* Styling for coloring anchor on hover and focus*/
 a, a:visited {
 	color: black;	
 	-moz-transition: all 0.3s ease-in-out;
@@ -222,7 +233,7 @@ a:hover, a:focus {
 	color: #E87B07;
 }
 
-/*Styling for search */
+/*Styling for search bar on the landing page*/
 
 
 #form-buscar >.form-group >.input-group > .form-control {
