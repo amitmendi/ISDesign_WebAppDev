@@ -1,0 +1,78 @@
+
+
+
+
+/*  Responsive Styling For Displaying And Deleting Database Information */ 
+
+#user_info{
+	overflow-x: auto;
+	
+}
+
+#recipe_info{
+	overflow-x: auto;
+	
+}
+
+#review_info{
+	overflow-x: auto;
+	
+}
+
+/*Styling for all the tabular data(user, recipe & review) on the page */
+.table_fetch{
+	margin-left: 8%;
+	margin-bottom: 2%;
+	margin-right: 8%;
+}
+/* Styling for graying alternate rows in table to provide contrast */
+.table_fetch tr:nth-child(even) {
+  background-color: #eee;
+}
+
+/* Styling for adding border and text in the center of each cell to table headers table cells */
+th, td {
+  border: 1px solid black;
+  padding: 0.4em;
+  font-family: sans-serif;
+  text-align: center;
+
+}
+
+h3 {
+	font-weight:500;
+}
+/* Styling for black outline on the input text field for entering user_id/ recipe_id/ review_id */
+.input_text{
+	border:solid 0.1em black;
+}
+/* Styling for delete button */
+.btn-delete {
+	margin-top: 1%;
+    background-color:#54d0dd;
+    outline: none;
+    color: black;
+    font-size: 14px;
+    height: auto;
+    font-weight: normal;
+    padding: 0.8em 0.5em;
+    text-transform: uppercase;
+    border-color: solid 0.1em black;
+}
+/* Styling for displaying orange color on button:hover to keep consistency throughout the website */
+.btn-delete:hover,
+.btn-delete:focus {
+    color: #fff;
+    background-color: #e87b07;
+    border-color: #53A3CD;
+}
+
+/* styling for delete element table */
+.delete_element_table{
+	margin-left:8%;
+	margin-bottom: 3%;
+	font-family: sans-serif;
+}
+
+
+

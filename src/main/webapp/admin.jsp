@@ -99,7 +99,7 @@ if(firstname == null) response.sendRedirect("login.jsp");
   </header>  
 <!-- Header -->  
   
-<!--This part has pure css aand html required as part of the project  -->   
+<!--This part has pure css and html required as part of the project  -->   
 <!-- Table contents -->  
 
 <div id="user_info">
@@ -109,7 +109,6 @@ if(firstname == null) response.sendRedirect("login.jsp");
 <h2>User Profile Table</h2>
 
 <table>
-  <caption>User Information</caption>
 
   <tr>
     <th>User Id</th>
@@ -140,14 +139,14 @@ if(firstname == null) response.sendRedirect("login.jsp");
 
 <!-- Deleting a particular user entered by the admin -->
 
-<div class="delete_element_table">
+<div class="delete_element_table"> 
 <form id="del_userid" action="AdminUserServlet" method="post" style="display: block;">
 <div class="delete_element_text">
-<label for="userid">Enter the user id you want to delete</label>
-<input type="text" name="userid" tabindex="1" placeholder="User Id" value="">
+<label for="userid">Enter the user id you want to delete: </label>
+<input class="input_text" type="text" name="userid" tabindex="1" placeholder="User Id" value="">
 </div>
 <div class="delete_element_btn">
-<input type="submit" name="register-submit" tabindex="5" value="Delete">
+<input type="submit" name="register-submit" class="btn-delete" tabindex="5" value="Delete">
 </div>
  
  					<!-- For displaying error message if no user id entered -->
@@ -183,13 +182,13 @@ if(firstname == null) response.sendRedirect("login.jsp");
 <h2>Recipe Table</h2>
 
 <table>
-  <caption>Recipe Information</caption>
 
   <tr>
     <th>Recipe Id</th>
     <th>Recipe Name</th>
     <th>Recipe Description</th>
-    <th>Recipe Url</th>
+    
+    
     
   </tr>
   
@@ -203,7 +202,8 @@ if(firstname == null) response.sendRedirect("login.jsp");
     <td><%=recipe.getRecipeId() %></td>
     <td><%=recipe.getRecipeName() %></td>
     <td><%=recipe.getRecipeDesc() %></td>
-    <td><%=recipe.getImgUrl() %></td>
+    
+    
     
   </tr>
   <% }%>
@@ -217,11 +217,11 @@ if(firstname == null) response.sendRedirect("login.jsp");
 <div class="delete_element_table">
 <form id="del_recipeid" action="AdminRecipeServlet" method="post" style="display: block;">
 <div class="delete_element_text">
-<label for="recipeid">Enter the recipe id you want to delete</label>
-<input type="text" name="recipeid" tabindex="1" placeholder="Recipe Id" value="">
+<label for="recipeid">Enter the recipe id you want to delete: </label>
+<input class="input_text" type="text" name="recipeid" tabindex="1" placeholder="Recipe Id" value="">
 </div>
 <div class="delete_element_btn">
-<input type="submit" name="register-submit" tabindex="5" value="Delete">
+<input type="submit" name="register-submit" class="btn-delete" tabindex="5" value="Delete">
 </div>
    
 					<!-- For displaying error message if no recipe id entered -->
@@ -256,7 +256,6 @@ if(firstname == null) response.sendRedirect("login.jsp");
 <h2>Recipe Review Table</h2>
 
 <table>
-  <caption>Review Information</caption>
 
   <tr>
     <th>Review Id</th>
@@ -292,11 +291,11 @@ if(firstname == null) response.sendRedirect("login.jsp");
 <div class="delete_element_table">
 <form id="del_reveiwid" action="AdminReviewServlet" method="post" style="display: block;">
 <div class="delete_element_text">
-<label for="reviewid">Enter the review id you want to delete</label>
-<input type="text" name="reviewid" tabindex="1" placeholder="Review Id" value="">
+<label for="reviewid">Enter the review id you want to delete: </label>
+<input class="input_text" type="text" name="reviewid" tabindex="1" placeholder="Review Id" value="">
 </div>
 <div class="delete_element_btn">
-<input type="submit" name="register-submit" tabindex="5" value="Delete">
+<input type="submit" name="register-submit" class="btn-delete" tabindex="5" value="Delete">
 </div>
 
 
@@ -335,11 +334,11 @@ if(firstname == null) response.sendRedirect("login.jsp");
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
 <script type="text/javascript" src="js/bootstrap.js"></script> 
 <!--    JS for toggle in RWD(menu) -->
-<!-- <script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
 <script type="text/javascript" src="js/nivo-lightbox.js"></script> 
 <script type="text/javascript" src="js/jquery.isotope.js"></script> 
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script> -->
+<script type="text/javascript" src="js/contact_me.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

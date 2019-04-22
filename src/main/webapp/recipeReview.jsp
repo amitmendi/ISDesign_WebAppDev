@@ -80,7 +80,7 @@
   <!-- /.container-fluid --> 
 </nav>
 <div id="recipedetails" class="container">
-    <div class="row" style="margin-top: 15%;">    
+    <div class="row" style="margin-top: 15%; margin-left: auto; margin-right: auto;">    
         <div class="col-md-8">
             <div class="card" style="background-color:#F9F9F9;">
                 <!-- card image -->
