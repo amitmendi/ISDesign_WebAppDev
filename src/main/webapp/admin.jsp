@@ -190,9 +190,6 @@ if(firstname == null) response.sendRedirect("login.jsp");
     <th>Recipe Name</th>
     <th>Recipe Description</th>
     <th>Recipe Url</th>
-    <th>Recipe Steps</th>
-    <th>Recipe Ingredients</th>
-    
     
   </tr>
   
@@ -207,9 +204,6 @@ if(firstname == null) response.sendRedirect("login.jsp");
     <td><%=recipe.getRecipeName() %></td>
     <td><%=recipe.getRecipeDesc() %></td>
     <td><%=recipe.getImgUrl() %></td>
-    <td><%=recipe.getRecipeSteps() %></td>
-    <td><%=recipe.getRecipeIng() %></td>
-    
     
   </tr>
   <% }%>

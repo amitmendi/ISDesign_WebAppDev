@@ -41,7 +41,7 @@ public class AdminReviewServlet extends HttpServlet {
 	    	else if (reviewId.matches("\\d+?")){
 	    		AdminDb dobj = new AdminDb();
 				
-	    		dobj.delete_user(Integer.parseInt(reviewId));
+	    		dobj.delete_review(Integer.parseInt(reviewId));
 			
 		
 				//redirecting back to admin page

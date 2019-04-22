@@ -41,7 +41,7 @@ public class AdminRecipeServlet extends HttpServlet {
 	    	else if (recipeId.matches("\\d+?")){
 	    		AdminDb dobj = new AdminDb();
 				
-	    		dobj.delete_user(Integer.parseInt(recipeId));
+	    		dobj.delete_recipe(Integer.parseInt(recipeId));
 			
 		
 				//redirecting back to admin page
