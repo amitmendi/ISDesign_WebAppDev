@@ -17,8 +17,8 @@
          <div class="card mb-4 text-white bg-dark" style="border:none;">
             <img class="card-img-top" src="./img/Coco-success2.jpg" alt="Card image cap">
             <div class="card-body" align="center" style="background:white;">
-               <h5 class="card-title" align="center" style="color:black">Success!</h5>
-               <p class="card-text" align="center" style="color:black">You are one step away from enjoying delicious recipes! Please Login with your credentials to continue</p>
+               <h5 class="card-title" align="center" style="color:black">Update Successful!</h5>
+               <p class="card-text" align="center" style="color:black">Please Login with your credentials to continue</p>
                <button class="btn btn-login" align="center"><a href="login.jsp" style="color:black;padding:0.4em">Login </a></button>
             </div>
          </div>
