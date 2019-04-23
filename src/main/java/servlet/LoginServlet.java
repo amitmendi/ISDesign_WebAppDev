@@ -48,13 +48,12 @@ public class LoginServlet extends HttpServlet {
 			//code to redirect to admin page if admin logs in
 			
 			if (map.get("firstname").equals("Admin")){
-				RequestDispatcher rd=request.getRequestDispatcher("/admin.jsp");            
-				rd.include(request, response);
+				response.sendRedirect("admin.jsp");
 			}
 			else{
 
-			RequestDispatcher rd=request.getRequestDispatcher("/landingpage.jsp");            
-			rd.include(request, response);
+				response.sendRedirect("landingpage.jsp");
+
 			}
 
 		}else{
