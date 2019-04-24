@@ -101,8 +101,8 @@
         		<input type="hidden" name="recipeName" value = "<%=rec.getRecipeName()%>" >
      			<input type="hidden" name="recipeUrl" value = "<%=rec.getImgUrl()%>" >
      			<input type="hidden" name="recipeDesc" value = "<%=rec.getRecipeDesc()%>" >
-     			<input type="hidden" name="recipeSteps" value = "<%=rec.getRecipeIng()%>" >
-     			<input type="hidden" name="recipeIng" value = "<%=rec.getRecipeSteps()%>" >
+     			<input type="hidden" name="recipeSteps" value = "<%=rec.getRecipeSteps()%>" >
+     			<input type="hidden" name="recipeIng" value = "<%=rec.getRecipeIng()%>" >
                 <button type ="submit" class="btn btn-primary">View recipe</button>
         </form>
       </div>
@@ -114,7 +114,7 @@
 </div>
 
 </div>
-
+<!-- Footer Section -->
 <div id="footer">
 <div class = "searchrecipe-footer">
     <div class="fnav">
@@ -125,10 +125,7 @@
 <!--    JS for toggle menu (RWD) -->
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
 <script type="text/javascript" src="js/bootstrap.js"></script> 
-<!-- <script type="text/javascript" src="js/SmoothScroll.js"></script> -->
-<!-- <script type="text/javascript" src="js/nivo-lightbox.js"></script> 
-<script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> -->
+
 <script type="text/javascript" src="js/main.js"></script> 
 </body>
 </html>
