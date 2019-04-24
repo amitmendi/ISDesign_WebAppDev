@@ -88,13 +88,14 @@ public class ConnectionToDb {
 		      ResultSet res=stmt.executeQuery();
 		      while(res.next()){
 		          //Retrieve by column name
+
 		    	  Recipe rec = new Recipe();
-		    	  rec.setRecipeId(res.getInt(1)); //added so that specific recipe info can be fetched when full recipe is viewed
-		    	  rec.setRecipeDesc(res.getString(3));
-		    	  rec.setRecipeName(res.getString(2));
-		    	  rec.setImgUrl(res.getString(4));
-		    	  rec.setRecipeSteps(res.getString(5)); //added so that specific recipe info can be fetched when full recipe is viewed
-		    	  rec.setRecipeIng(res.getString(6)); //added so that specific recipe info can be fetched when full recipe is viewed
+		    	  rec.setRecipeId(res.getInt("Recipe_id"));  //added so that specific recipe info can be fetched when full recipe is viewed
+		    	  rec.setRecipeDesc(res.getString("Recipe_desc"));
+		    	  rec.setRecipeName(res.getString("Recipe_name"));
+		    	  rec.setImgUrl(res.getString("Recipe_url"));
+		    	  rec.setRecipeSteps(res.getString("RecipeSteps"));		//added so that specific recipe info can be fetched when full recipe is viewed    	  
+		    	  rec.setRecipeIng(res.getString("Recipe_ing")); //added so that specific recipe info can be fetched when full recipe is viewed
 		    	  al.add(rec);
 		      }
 		
