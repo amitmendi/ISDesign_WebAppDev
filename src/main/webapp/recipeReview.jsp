@@ -35,8 +35,7 @@
 <script type="text/javascript" src="js/SmoothScroll.js"></script> 
 <script type="text/javascript" src="js/nivo-lightbox.js"></script>
 <script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<!-- <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>  -->
-<!-- <script type="text/javascript" src="js/contact_me.js"></script>  -->
+
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/View_recipe.js"></script>
 
@@ -91,7 +90,7 @@
                 <div class="card-content">
                     <span class="card-title"><%=rec.getRecipeName()%></span>                    
                     <button type="button" id="show" class="btn btn-custom pull-right"aria-label="Left Align">
-                        <!-- <i class="fa fa-ellipsis-v"></i> -->Show Recipe
+                      Show Recipe
                     </button>
                 </div><!-- card content -->
                 <div class="card-action">
@@ -158,8 +157,8 @@
                     <input type="hidden" name="recipeName" value = "<%=rec.getRecipeName()%>" >
                     <input type="hidden" name="recipeUrl" value = "<%=rec.getImgUrl()%>" >
                     <input type="hidden" name="recipeDesc" value = "<%=rec.getRecipeDesc()%>" >
-                    <input type="hidden" name="recipeSteps" value = "<%=rec.getRecipeIng()%>" >
-                    <input type="hidden" name="recipeIng" value = "<%=rec.getRecipeSteps()%>" >
+                    <input type="hidden" name="recipeSteps" value = "<%=rec.getRecipeSteps()%>" >
+                    <input type="hidden" name="recipeIng" value = "<%=rec.getRecipeIng()%>" >
                       
                       <!--  For reviewlist call fetch recipe again this servlet using recipe id -->
 
@@ -215,7 +214,7 @@
 </div>
 </div> <!-- review section end-->
 <!-- Review end -->
-
+<!-- You may Also Like Section -->
 <div id = "maylike">
 <h2>You may also like:  </h2>
 <div class="row">
@@ -253,6 +252,7 @@
 
     </div>
 </div>
+<!-- Footer -->
 <div id="footer">
   <div class="container text-center">
     <div class="fnav">
